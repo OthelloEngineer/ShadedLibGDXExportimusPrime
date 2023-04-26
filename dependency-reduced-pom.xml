@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>dk.sdu.mmmi.cbse</groupId>
+  <groupId>dk.sdu.othello</groupId>
   <artifactId>shadedlibgdx</artifactId>
   <name>shadedlibgdx</name>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <build>
     <plugins>
       <plugin>
@@ -52,64 +52,65 @@
               <modules>
                 <module>
                   <artifact>
-                    <groupId>dk.sdu.mmmi.cbse</groupId>
+                    <groupId>dk.sdu.othello</groupId>
                     <artifactId>shadedlibgdx</artifactId>
-                    <version>1.0.1-SNAPSHOT</version>
+                    <version>1.0.2-SNAPSHOT</version>
                   </artifact>
                   <moduleInfoSource>module com.badlogic.gdx {
-                    requires java.desktop;
-                    requires jdk.unsupported;
-                    exports com.badlogic.gdx;
-                    exports com.badlogic.gdx.graphics;
-                    exports com.badlogic.gdx.backends.lwjgl3;
-                    exports com.badlogic.gdx.graphics.glutils;
-                    exports com.badlogic.gdx.graphics.g2d;
-                    exports com.badlogic.gdx.graphics.g3d;
-                    exports com.badlogic.gdx.graphics.g3d.attributes;
-                    exports com.badlogic.gdx.graphics.g3d.environment;
-                    exports com.badlogic.gdx.graphics.g3d.model;
-                    exports com.badlogic.gdx.graphics.g3d.particles;
-                    exports com.badlogic.gdx.graphics.g3d.particles.batches;
-                    exports com.badlogic.gdx.graphics.g3d.particles.renderers;
-                    exports com.badlogic.gdx.graphics.g3d.shaders;
-                    exports com.badlogic.gdx.graphics.g3d.utils;
-                    exports com.badlogic.gdx.graphics.glutils;
-                    exports com.badlogic.gdx.graphics.glutils.shaders;
-                    exports com.badlogic.gdx.graphics.profiling;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptor;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorFrameListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorRenderListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorShaderListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorTextureListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeRenderListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeShaderListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeTextureListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeRenderListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeShaderListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeTextureListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeVertexAttributeListener;
-                    exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeVertexAttributeRenderListener;
-                    exports com.badlogic.gdx.audio;
-                    exports com.badlogic.gdx.audio.analysis;
-                    exports com.badlogic.gdx.audio.io;
-                    exports com.badlogic.gdx.audio.pitch;
-                    exports com.badlogic.gdx.audio.recorders;
-                    exports com.badlogic.gdx.backends.android;
-                    exports com.badlogic.gdx.backends.android.surfaceview;
-                    exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
-                    exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy.MeasuredDimension;
-                    exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy.MeasuredDimension;
-                    exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
-                    exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
-                    exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
-                    exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
-                    exports com.badlogic.gdx.audio.Music;
-                    exports com.badlogic.gdx.audio.Sound;
-                    exports com.badlogic.gdx.audio.AudioRecorder;
-                    }
-                  </moduleInfoSource>
+                                        requires java.desktop;
+                                        requires jdk.unsupported;
+                                        exports com.badlogic.gdx;
+                                        exports com.badlogic.gdx.graphics;
+                                        exports com.badlogic.gdx.backends.lwjgl3;
+                                        exports com.badlogic.gdx.graphics.glutils;
+                                        exports com.badlogic.gdx.graphics.g2d;
+                                        exports com.badlogic.gdx.graphics.g3d;
+                                        exports com.badlogic.gdx.graphics.g3d.attributes;
+                                        exports com.badlogic.gdx.graphics.g3d.environment;
+                                        exports com.badlogic.gdx.graphics.g3d.model;
+                                        exports com.badlogic.gdx.graphics.g3d.particles;
+                                        exports com.badlogic.gdx.graphics.g3d.particles.batches;
+                                        exports com.badlogic.gdx.graphics.g3d.particles.renderers;
+                                        exports com.badlogic.gdx.graphics.g3d.shaders;
+                                        exports com.badlogic.gdx.graphics.g3d.utils;
+                                        exports com.badlogic.gdx.graphics.glutils;
+                                        exports com.badlogic.gdx.graphics.glutils.shaders;
+                                        exports com.badlogic.gdx.graphics.profiling;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptor;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorFrameListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorRenderListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorShaderListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorTextureListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeRenderListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeShaderListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeTextureListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeRenderListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeShaderListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeTextureListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeVertexAttributeListener;
+                                        exports com.badlogic.gdx.graphics.profiling.GLInterceptorVertexAttributeVertexAttributeVertexAttributeRenderListener;
+                                        exports com.badlogic.gdx.audio;
+                                        exports com.badlogic.gdx.audio.analysis;
+                                        exports com.badlogic.gdx.audio.io;
+                                        exports com.badlogic.gdx.audio.pitch;
+                                        exports com.badlogic.gdx.audio.recorders;
+                                        exports com.badlogic.gdx.backends.android;
+                                        exports com.badlogic.gdx.backends.android.surfaceview;
+                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
+                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy.MeasuredDimension;
+                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy.MeasuredDimension;
+                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
+                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
+                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
+                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
+                                        exports com.badlogic.gdx.audio.Music;
+                                        exports com.badlogic.gdx.audio.Sound;
+                                        exports com.badlogic.gdx.audio.AudioRecorder;
+                                        exports com.badlogic.gdx.files.FileHandle;
+                                        exports com.badlogic.gdx.files.FileHandleStream;
+                                        }</moduleInfoSource>
                 </module>
               </modules>
             </configuration>
@@ -128,7 +129,7 @@
     <repository>
       <id>github</id>
       <name>GitHub OthelloEngineer Apache Maven Packages</name>
-      <url>hhttps://maven.pkg.github.com/OthelloEngineer/ShadedLibGDXExportimusPrime</url>
+      <url>https://maven.pkg.github.com/OthelloEngineer/ShadedLibGDXExportimusPrime</url>
     </repository>
   </distributionManagement>
   <properties>

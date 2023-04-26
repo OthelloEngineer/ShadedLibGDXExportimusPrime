@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>dk.sdu.mmmi.cbse</groupId>
+    <groupId>dk.sdu.othello</groupId>
     <artifactId>shadedlibgdx</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>shadedlibgdx</name>
 
@@ -123,9 +123,9 @@
                             <modules>
                                 <module>
                                     <artifact>
-                                        <groupId>dk.sdu.mmmi.cbse</groupId>
+                                        <groupId>dk.sdu.othello</groupId>
                                         <artifactId>shadedlibgdx</artifactId>
-                                        <version>1.0.1-SNAPSHOT</version>
+                                        <version>1.0.2-SNAPSHOT</version>
                                     </artifact>
                                     <moduleInfoSource>
                                         module com.badlogic.gdx {
@@ -180,6 +180,8 @@
                                         exports com.badlogic.gdx.audio.Music;
                                         exports com.badlogic.gdx.audio.Sound;
                                         exports com.badlogic.gdx.audio.AudioRecorder;
+                                        exports com.badlogic.gdx.files.FileHandle;
+                                        exports com.badlogic.gdx.files.FileHandleStream;
                                         }
                                     </moduleInfoSource>
                                 </module>
