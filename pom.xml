@@ -170,12 +170,7 @@
                                         exports com.badlogic.gdx.audio.recorders;
                                         exports com.badlogic.gdx.backends.android;
                                         exports com.badlogic.gdx.backends.android.surfaceview;
-                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
                                         exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy.MeasuredDimension;
-                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy.MeasuredDimension;
-                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
-                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
-                                        exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
                                         exports com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
                                         exports com.badlogic.gdx.audio.Music;
                                         exports com.badlogic.gdx.audio.Sound;
